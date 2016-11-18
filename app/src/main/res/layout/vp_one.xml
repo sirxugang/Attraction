@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.2"
+        android:scaleType="fitXY"
+        android:src="@drawable/weather_backgrand" />
+
+    <LinearLayout
+        android:id="@+id/llRootI"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvday"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="今天白天"
+                android:textColor="@color/purple"
+                android:textSize="20sp" />
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/sdvDay"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="2dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvnight"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="今天晚上"
+                android:textColor="@color/purple"
+                android:textSize="20sp" />
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/sdvNight"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="2dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llRoot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/llRootI"
+        android:orientation="horizontal"
+        android:paddingTop="10dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/weatherI"
+                android:text="天气:" />
+
+            <TextView
+                style="@style/weatherI"
+                android:text="温度:" />
+
+            <TextView
+                style="@style/weatherI"
+                android:text="降水:" />
+
+            <TextView
+                style="@style/weatherI"
+                android:text="风向:" />
+
+            <TextView
+                style="@style/weatherI"
+                android:text="风力:" />
+
+            <TextView
+                style="@style/weatherI"
+                android:text="紫外线:" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvTianQi"
+                style="@style/weatherII"
+                android:text="天气:" />
+
+            <TextView
+                android:id="@+id/tvWenDu"
+                style="@style/weatherII"
+                android:text="温度:" />
+
+            <TextView
+                android:id="@+id/tvJiangShui"
+                style="@style/weatherII"
+                android:text="降水:" />
+
+            <TextView
+                android:id="@+id/tvFengxiang"
+                style="@style/weatherII"
+                android:text="风向:" />
+
+            <TextView
+                android:id="@+id/tvFengLi"
+                style="@style/weatherII"
+                android:text="风力:" />
+
+            <TextView
+                android:id="@+id/tvZiWaiXian"
+                style="@style/weatherII"
+                android:text="紫外线:" />
+
+    </LinearLayout>
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@color/gray_ii"/>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/weatherI"
+                android:text="天气:" />
+
+            <TextView
+                style="@style/weatherI"
+                android:text="温度:" />
+
+            <TextView
+                style="@style/weatherI"
+                android:text="风向:" />
+
+            <TextView
+                style="@style/weatherI"
+                android:text="风力:" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvTianQiII"
+                style="@style/weatherII"
+                android:text="天气:" />
+
+            <TextView
+                android:id="@+id/tvWenDuII"
+                style="@style/weatherII"
+                android:text="温度:" />
+
+            <TextView
+                android:id="@+id/tvFengxiangII"
+                style="@style/weatherII"
+                android:text="风向:" />
+
+            <TextView
+                android:id="@+id/tvFengLiII"
+                style="@style/weatherII"
+                android:text="风力:" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/llRoot">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="日出和日落:" />
+
+        <TextView
+            android:id="@+id/tvRiChuRiLuo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="日出和日落:" />
+    </LinearLayout>
+
+
+</RelativeLayout>

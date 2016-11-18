@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.xugang.attractions.AttrInfoActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize">
+
+        <TextView
+            android:id="@+id/tvMenu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="景点详情"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvBack"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:drawableLeft="@mipmap/back_ii"
+            android:gravity="center_vertical"
+            android:text="返回"
+            android:textColor="@color/toobar_attr"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="170dp">
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/sdvAttrPicture"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:actualImageScaleType="fitXY"
+                    app:placeholderImage="@mipmap/b"
+                    app:progressBarAutoRotateInterval="1000"
+                    app:progressBarImage="@mipmap/loading_ii" />
+
+                <TextView
+                    android:id="@+id/tvAttrName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:text="景点名"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="17dp"
+                    android:gravity="right">
+
+                    <CheckBox
+                        android:id="@+id/cbFavorite"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/attr_favorite"
+                        android:button="@null"
+                        android:checked="false" />
+
+                    <TextView
+                        android:id="@+id/tvShare"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="50dp"
+                        android:background="@mipmap/share" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:src="@mipmap/opentime" />
+
+                <TextView
+                    android:id="@+id/tvOpenTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="open time" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="47dp"
+                android:background="@color/gray_ii" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp">
+
+                <ImageView
+                    android:id="@+id/ivLocation"
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:src="@mipmap/location_info" />
+
+                <TextView
+                    android:id="@+id/tvLocation"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="location" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray_ii" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvAttrInfoI"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:lineSpacingExtra="4dp"
+                    android:padding="12dp"
+                    android:text="@string/test" />
+
+                <TextView
+                    android:id="@+id/tvAttrInfoII"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="4dp"
+                    android:padding="12dp"
+                    android:text="@string/test"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tvMore"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="查看更多"
+                android:textColor="@color/gray_i" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="18dp"
+                android:background="@color/gray_ii" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="温馨提示" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvAttentionI"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:lineSpacingExtra="4dp"
+                    android:padding="12dp"
+                    android:text="@string/test" />
+
+                <TextView
+                    android:id="@+id/tvAttentionII"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="4dp"
+                    android:padding="12dp"
+                    android:text="@string/test"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tvMoreII"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="查看更多"
+                android:textColor="@color/gray_i" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray_ii" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tvAttrPrice"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@mipmap/price" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tvAttrPicture"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:background="@mipmap/pictures" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tvAttrWeather"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:background="@mipmap/weather" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tvAttrHotal"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:background="@mipmap/hotel" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

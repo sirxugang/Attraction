@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ECEDF1"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:src="@mipmap/load_loge" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/tilI"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/ivLogo"
+        android:layout_marginTop="30dp">
+
+        <EditText
+            android:id="@+id/etUserName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/etstyle"
+            android:hint="    请输入用户名" />
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/tilII"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/tilI"
+        android:layout_marginTop="20dp">
+
+        <EditText
+            android:id="@+id/etUserPassword"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/etstyle"
+            android:hint="    请输入密码"
+            android:inputType="textPassword" />
+    </android.support.design.widget.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/btnLoad"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/tilII"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/load_btn_style"
+        android:padding="5dp"
+        android:text="登    录"
+        android:textColor="@color/white"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/tvHint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnLoad"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="注册"
+        android:textColor="@color/rea"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tvNewUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="end|bottom"
+        android:text="新用户注册"
+        android:textColor="@color/purple" />
+
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:src="@mipmap/qq" />
+
+    <TextView
+        android:id="@+id/tvQQLoad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:layout_toRightOf="@id/iv"
+        android:text="使用QQ登录"
+        android:textColor="@color/purple" />
+
+    <TextView
+        android:id="@+id/tvZhuxiao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:text="注销第三方登录"
+        android:textColor="@color/purple" />
+
+</RelativeLayout>

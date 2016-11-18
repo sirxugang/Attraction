@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SlidingPaneLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/splRoot"
+    android:layout_width="match_parent"
+    android:layout_height="240dp"
+    android:layout_margin="2dp">
+
+    <TextView
+        android:layout_width="1dp"
+        android:layout_height="match_parent" />
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/cvRoot"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:layout_margin="2dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/llRoot"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="180dp"
+                android:layout_height="180dp">
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/sdvAttrPicture"
+                    android:layout_width="180dp"
+                    android:layout_height="180dp"
+                    android:background="#9fff"
+                    android:src="@mipmap/loading" />
+
+                <TextView
+                    android:id="@+id/tvAttrName"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/gray_ii"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="景点名称"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tvAttrInfo"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="5dp"
+                android:singleLine="true"
+                android:text="景点概要"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tvAttrPrice"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:text="价格"
+                android:textColor="@color/rea" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</android.support.v4.widget.SlidingPaneLayout>

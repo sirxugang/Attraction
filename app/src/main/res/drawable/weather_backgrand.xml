@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:drawable="@mipmap/weather_backgrand_1"
+        android:duration="1500" />
+    <item
+        android:drawable="@mipmap/weather_backgrand_2"
+        android:duration="1500" />
+    <item
+        android:drawable="@mipmap/weather_backgrand_3"
+        android:duration="1500" />
+    <item
+        android:drawable="@mipmap/weather_backgrand_4"
+        android:duration="1500" />
+    <item
+        android:drawable="@mipmap/weather_backgrand_5"
+        android:duration="1500" />
+    <item
+        android:drawable="@mipmap/weather_backgrand_6"
+        android:duration="1500" />
+    <item
+        android:drawable="@mipmap/weather_backgrand_7"
+        android:duration="1500" />
+    <item
+        android:drawable="@mipmap/weather_backgrand_8"
+        android:duration="1500" />
+</animation-list>

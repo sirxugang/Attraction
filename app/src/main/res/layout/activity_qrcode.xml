@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.xugang.attractions.QRCodeActivity">
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="请先登录"
+        android:textSize="25sp"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/ivQRCode"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true" />
+
+    <Button
+        android:id="@+id/btnScan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="5dp"
+        android:text="扫描二维码"
+        android:onClick="ScanQRCode"
+        android:textColor="@color/purple" />
+
+    <Button
+        android:id="@+id/btnMine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="我的二维码"
+        android:onClick="getQRCode"
+        android:textColor="@color/purple" />
+</RelativeLayout>

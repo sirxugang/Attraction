@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.xugang.attractions.MyFavoriteActivity">
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:text="我的收藏"
+        android:textColor="@color/purple"
+        android:textSize="25sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/tv"
+        android:background="@color/purple" />
+
+    <ListView
+        android:id="@+id/lvMyFavorite"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tv"
+        android:layout_margin="5dp"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="2dp"></ListView>
+
+    <TextView
+        android:id="@+id/tvLoad"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="请先登录"
+        android:textColor="@color/rea"
+        android:textSize="25sp"
+        android:visibility="gone" />
+</RelativeLayout>

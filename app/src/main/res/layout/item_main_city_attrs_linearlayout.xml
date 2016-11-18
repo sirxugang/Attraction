@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SlidingPaneLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/splRoot"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:layout_margin="2dp">
+
+    <TextView
+        android:layout_width="110dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="555dp"
+        android:background="@color/rea_i" />
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/cvRoot"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_margin="2dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp">
+
+        <LinearLayout
+            android:id="@+id/llRoot"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/sdvAttrPicture"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                app:placeholderImage="@mipmap/loading"
+                app:progressBarAutoRotateInterval="1000"
+                app:progressBarImage="@mipmap/loading_ii"
+                app:roundAsCircle="true" />
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingLeft="8dp">
+
+                <TextView
+                    android:id="@+id/tvAttrName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:singleLine="true"
+                    android:text="景点名称"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tvAttrInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="景点概要" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvAttrPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingRight="5dp"
+                android:text="价格"
+                android:textColor="@color/purple" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</android.support.v4.widget.SlidingPaneLayout>
